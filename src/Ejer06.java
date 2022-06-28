@@ -11,6 +11,8 @@ public class Ejer06 {
 
         char sexo;
         int altu;
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();   
         System.out.println(" ---------------");
         System.out.println("| El peso ideal |");
         System.out.println(" ---------------");

@@ -13,6 +13,8 @@ public class Ejer05 {
         // Random para generar el número aleatorio.
 
         int adivina;
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();   
         System.out.println(" -------------------");
         System.out.println("| Adivina el Número |");
         System.out.println(" -------------------");

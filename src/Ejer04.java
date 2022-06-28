@@ -9,6 +9,8 @@ public class Ejer04 {
         // tabla y mostrar los datos.
 
         int num01;
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();   
         System.out.println(" -----------------------");
         System.out.println("| Tabla de Multiplicar  |");
         System.out.println(" -----------------------");

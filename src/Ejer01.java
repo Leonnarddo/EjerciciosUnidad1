@@ -10,6 +10,8 @@ public class Ejer01 {
         
         double num1, num2;
         int opera;
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();   
         System.out.println(" ---------------------------------");
         System.out.println("| Operaciones Aritméticas Básicas |");
         System.out.println(" ---------------------------------");
@@ -19,7 +21,7 @@ public class Ejer01 {
         System.out.print("Introduzca el segundo número: ");
         num2 = sc.nextDouble();
         System.out.println("Que operación quieres realizar?");
-        System.out.print("1 Suma, 2 Resta, 3 Multiplicación o 4 División: ");
+        System.out.println("1 Suma, \n2 Resta, \n3 Multiplicación \n4 División ");
         opera = sc.nextInt();
         operar(num1,num2,opera);
         sc.close();

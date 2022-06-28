@@ -12,6 +12,8 @@ public class Ejer02 {
         // decimales.
 
         double nota1, nota2, nota3;
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();   
         System.out.println(" ------------------------------");
         System.out.println("| Promedio de notas de Alumno  |");
         System.out.println(" ------------------------------");

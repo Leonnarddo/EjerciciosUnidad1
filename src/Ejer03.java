@@ -9,6 +9,8 @@ public class Ejer03 {
         // pagan a $30.000.
 
         int horas;
+        System.out.print("\033[H\033[2J");  
+        System.out.flush();   
         System.out.println(" ---------------------");
         System.out.println("| Calcular el Sueldo  |");
         System.out.println(" ---------------------");
