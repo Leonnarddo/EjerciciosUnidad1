@@ -13,7 +13,7 @@ public class Ejer09 {
 
         String nombre;
         int edad;
-        float salario;
+        double salario;
         Scanner sc = new Scanner(System.in);
         System.out.print("\033[H\033[2J");  
         System.out.flush();   
@@ -28,14 +28,15 @@ public class Ejer09 {
             System.out.println(nombre + " es demasiado joven para trabajar.");
             else{
                 System.out.print("Salario del trabajador: ");
-                salario = sc.nextFloat();
+                salario = sc.nextDouble();
+                sc.close();
                 calcSal(nombre,edad,salario); 
             }       
         sc.close();
     }
 
-    public static void calcSal(String nombre, int edad, float salario){
-        float porcent=0;
+    public static void calcSal(String nombre, int edad, double salario){
+        double porcent=0;
        if(edad>=19 & edad <51 )
             porcent=(salario*5)/100;
             else if(edad<61)
