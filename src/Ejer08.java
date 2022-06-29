@@ -25,7 +25,7 @@ public class Ejer08 {
             PiPaTi(elec01,elec02);
             System.out.print("Desea volver a jugar (S/N)? ");
             conti = sc.next().charAt(0); 
-        }while(conti=='S' | conti=='s');
+        }while(conti=='S' || conti=='s');
         sc.close();
     }
 
@@ -33,19 +33,19 @@ public class Ejer08 {
 
         if(elec01==elec02)
             System.out.println("Empate!");
-            else if(elec01==1 & elec02==2)
-                System.out.println("Papel cubre a Piedra. Gana el jugador B");
-                else if(elec01==1 & elec02==3)
-                    System.out.println("Piedra rompe a Tijera. Gana el jugador A");
-                    else if(elec01==2 & elec02==1)
-                        System.out.println("Papel cubre a Piedra. Gana el jugador A");
-                        else if(elec01==2 & elec02==3)
-                            System.out.println("Tijera corta a Papel. Gana el jugador B");
-                            else if(elec01==3 & elec02==1)
-                                System.out.println("Piedra rompe a Tijera. Gana el jugador B");
-                                else if(elec01==3 & elec02==2)
-                                    System.out.println("Tijera corta a Papel. Gana el jugador A");
-                                    else
-                                        System.out.println("Algo no salió bien");
+        else if(elec01==1 & elec02==2)
+            System.out.println("Papel cubre a Piedra. Gana el jugador B");
+        else if(elec01==1 & elec02==3)
+            System.out.println("Piedra rompe a Tijera. Gana el jugador A");
+        else if(elec01==2 & elec02==1)
+            System.out.println("Papel cubre a Piedra. Gana el jugador A");
+        else if(elec01==2 & elec02==3)
+            System.out.println("Tijera corta a Papel. Gana el jugador B");
+        else if(elec01==3 & elec02==1)
+            System.out.println("Piedra rompe a Tijera. Gana el jugador B");
+        else if(elec01==3 & elec02==2)
+            System.out.println("Tijera corta a Papel. Gana el jugador A");
+        else
+            System.out.println("Algo no salió bien");
     }
 }
